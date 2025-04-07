@@ -1,0 +1,65 @@
+a:4:{s:8:"template";s:9:"lawyering";s:4:"mods";a:4:{i:0;b:0;s:18:"nav_menu_locations";a:1:{s:7:"primary";i:8;}s:18:"custom_css_post_id";i:1137;s:11:"custom_logo";i:751;}s:7:"options";a:10:{s:9:"site_icon";s:1:"0";s:31:"lawyering_theme_options[fb_url]";s:1:"#";s:34:"lawyering_theme_options[insta_url]";s:1:"#";s:36:"lawyering_theme_options[twitter_url]";s:1:"#";s:37:"lawyering_theme_options[sidebar_show]";i:1;s:38:"lawyering_theme_options[header_layout]";s:7:"header2";s:36:"lawyering_theme_options[dark_header]";i:0;s:42:"lawyering_theme_options[header_full_width]";i:0;s:37:"lawyering_theme_options[show_widgets]";i:1;s:23:"nav_menus_created_posts";a:0:{}}s:6:"wp_css";s:1197:"
+.slick-list,
+.slick-track {
+  transition-delay: 10ms;
+}
+.elementor-image-box-content {
+    padding-top: 10px;
+}
+p.elementor-image-box-description {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #B17856;
+	opacity: 0;
+}
+.elementor-image-box-wrapper:hover p.elementor-image-box-description{
+	opacity: 1;
+}
+.practice-areas-column {
+    width: calc(25% - 20px);
+    margin: 0 10px;
+    margin-bottom: 20px;
+}
+
+.wpforms-container input {
+    width: 100% !important;
+    display: block;
+    max-width: none !important;
+}
+.wpforms-container select {
+    width: 100% !important;
+    max-width: none !important;
+}
+.wpforms-container {
+    margin: 0 !important;
+}
+.wpforms-container .wpforms-field {
+    padding: 10px 0;
+    position: relative;
+}
+div.wpforms-container-full button[type=submit] {
+    width: 100%;
+}
+
+.mc4wp-form-fields input[type="email"] {
+    width: 70%;
+}
+.mc4wp-form-fields input[type="submit"] {
+    width: 30%;
+}
+.mc4wp-form-fields {
+    display: flex;
+    gap: 15px;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1300px;
+    }
+}";}
