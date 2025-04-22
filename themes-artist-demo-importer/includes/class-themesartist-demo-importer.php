@@ -227,6 +227,15 @@ if (!function_exists('themesartist_demo_importer_import_files')) {
 	add_filter( 'ocdi/import_files', 'ocdi_import_files' );
         return array(
 		        array(
+		            'import_file_name'             => esc_html__('Jobclub', 'themesartist-demo-importer'),
+		            'import_file_url'            => trailingslashit( plugin_dir_url( dirname( __FILE__ ) ) ) . 'public/demo/jobclub/jobclub.xml',
+		            'import_widget_file_url'     => trailingslashit( plugin_dir_url( dirname( __FILE__ ) ) ) . 'public/demo/jobclub/jobclub.wie',
+		            'import_customizer_file_url' => trailingslashit( plugin_dir_url( dirname( __FILE__ ) ) ) . 'public/demo/jobclub/jobclub.dat',
+		            'import_preview_image_url' => trailingslashit( plugin_dir_url( dirname( __FILE__ ) ) ) . 'public/demo/jobclub/jobclub.png',
+		            'import_notice'                => __( 'Make sure you are using free version of Jobclub Theme', 'themesartist-demo-importer' ),
+		            'preview_url'                  => 'https://demo.themesartist.com/jobclub/',
+		        ),
+		        array(
 		            'import_file_name'             => esc_html__('Super Job', 'themesartist-demo-importer'),
 		            'import_file_url'            => trailingslashit( plugin_dir_url( dirname( __FILE__ ) ) ) . 'public/demo/superjob/superjob.xml',
 		            'import_widget_file_url'     => trailingslashit( plugin_dir_url( dirname( __FILE__ ) ) ) . 'public/demo/superjob/superjob.wie',
