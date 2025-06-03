@@ -370,3 +370,150 @@ function themesartist_demo_importer_after_import_setup() {
     update_option( 'page_for_posts', $blog_page_id->ID );
 
 }
+
+
+
+
+
+
+
+function themesartist_demo_import_lists(){
+$demo_lists = array(
+      'demo1' =>array(
+         'title' => __( 'Profixer Free', 'themesartist-demo-importer' ),/*Title*/
+         'is_pro' => false,
+         'type' => 'handyman',/*Optional eg elementor, elementor or other page builders or type*/
+         'author' => __( 'Themesartist', 'themesartist-demo-importer' ),/*Author Name*/
+         'keywords' => array( 'handyman'),/*Search keyword*/
+         'categories' => array( 'profixer' ),/*Categories*/
+           'template_url' => array(
+            'content' => trailingslashit( plugin_dir_url( dirname( __FILE__ ) ) ) . 'public/themes/profixer/content.json',
+            'options' => trailingslashit( plugin_dir_url( dirname( __FILE__ ) ) ) . 'public/themes/profixer/options.json',
+            'widgets' => trailingslashit( plugin_dir_url( dirname( __FILE__ ) ) ) . 'public/themes/profixer/widgets.json'
+        ),
+         'screenshot_url' => trailingslashit( plugin_dir_url( dirname( __FILE__ ) ) ) . 'public/screenshot/profixer-free.jpg',/*Full URL Path to demo screenshot image*/
+         'demo_url' => 'https://demo.themesartist.com/handyman/',/*Full URL Path to Live Demo*/
+         /* Recommended plugin for this demo */
+      ),
+
+      'demo2' =>array(
+         'title' => __( 'Profixer Pro- Handyman1', 'themesartist-demo-importer' ),/*Title*/
+         'is_pro' => true,
+         'pro_url' => 'https://themesartist.com/profixer/',
+         'type' => 'handyman',/*Optional eg elementor, elementor or other page builders or type*/
+         'author' => __( 'Themesartist', 'themesartist-demo-importer' ),/*Author Name*/
+         'keywords' => array( 'handyman'),/*Search keyword*/
+         'categories' => array( 'profixer' ),/*Categories*/
+         'screenshot_url' => trailingslashit( plugin_dir_url( dirname( __FILE__ ) ) ) . 'public/screenshot/profixer-handyman.jpg',/*Full URL Path to demo screenshot image*/
+         'demo_url' => 'https://demo.themesartist.com/handyman2/',/*Full URL Path to Live Demo*/
+         /* Recommended plugin for this demo */
+      ),
+
+      'demo3' =>array(
+         'title' => __( 'Profixer Pro- Handyman 2', 'themesartist-demo-importer' ),/*Title*/
+         'is_pro' => true,
+         'pro_url' => 'https://themesartist.com/profixer/',
+         'type' => 'handyman',/*Optional eg elementor, elementor or other page builders or type*/
+         'author' => __( 'Themesartist', 'themesartist-demo-importer' ),/*Author Name*/
+         'keywords' => array( 'handyman' ),/*Search keyword*/
+         'categories' => array( 'profixer' ),/*Categories*/
+         'screenshot_url' => trailingslashit( plugin_dir_url( dirname( __FILE__ ) ) ) . '/public/screenshot/profixer-handyman-.jpg',/*Full URL Path to demo screenshot image*/
+         'demo_url' => 'https://demo.themesartist.com/handyman3/',/*Full URL Path to Live Demo*/
+         /* Recommended plugin for this demo */
+      ),
+
+      'demo4' =>array(
+         'title' => __( 'Profixer Pro- Plumbing 1', 'themesartist-demo-importer' ),/*Title*/
+         'is_pro' => true,
+         'pro_url' => 'https://themesartist.com/profixer/',         
+         'type' => 'plumbing',/*Optional eg elementor, elementor or other page builders or type*/
+         'author' => __( 'Themesartist', 'themesartist-demo-importer' ),/*Author Name*/
+         'keywords' => array( 'plumbing' ),/*Search keyword*/
+         'categories' => array( 'profixer' ),/*Categories*/
+         'screenshot_url' => trailingslashit( plugin_dir_url( dirname( __FILE__ ) ) ) . '/public/screenshot/profixer-plumbing.jpg',/*Full URL Path to demo screenshot image*/
+         'demo_url' => 'https://demo.themesartist.com/plumbing/',/*Full URL Path to Live Demo*/
+         /* Recommended plugin for this demo */
+      ),
+      'demo5' =>array(
+         'title' => __( 'Profixer Pro- Plumbing 2', 'themesartist-demo-importer' ),/*Title*/
+         'is_pro' => true,
+          'pro_url' => 'https://themesartist.com/profixer/',        
+         'type' => 'plumbing',/*Optional eg elementor, elementor or other page builders or type*/
+         'author' => __( 'Themesartist', 'themesartist-demo-importer' ),/*Author Name*/
+         'keywords' => array( 'plumbing' ),/*Search keyword*/
+         'categories' => array( 'profixer' ),/*Categories*/
+         'screenshot_url' => trailingslashit( plugin_dir_url( dirname( __FILE__ ) ) ) . '/public/screenshot/profixer-plumbing-.jpg',/*Full URL Path to demo screenshot image*/
+         'demo_url' => 'https://demo.themesartist.com/plumbing2/',/*Full URL Path to Live Demo*/
+         /* Recommended plugin for this demo */
+      ),
+
+      'demo6' =>array(
+         'title' => __( 'Profixer Pro- Roofing 1', 'themesartist-demo-importer' ),/*Title*/
+         'is_pro' => true,
+          'pro_url' => 'https://themesartist.com/profixer/',        
+         'type' => 'roofing',/*Optional eg elementor, elementor or other page builders or type*/
+         'author' => __( 'Themesartist', 'themesartist-demo-importer' ),/*Author Name*/
+         'keywords' => array( 'roofing' ),/*Search keyword*/
+         'categories' => array( 'profixer' ),/*Categories*/
+         'screenshot_url' => trailingslashit( plugin_dir_url( dirname( __FILE__ ) ) ) . '/public/screenshot/profixer-roofing.jpg',/*Full URL Path to demo screenshot image*/
+         'demo_url' => 'https://demo.themesartist.com/roofing/',/*Full URL Path to Live Demo*/
+         /* Recommended plugin for this demo */
+      ),
+
+      'demo7' =>array(
+         'title' => __( 'Profixer Pro- Roofing 2', 'themesartist-demo-importer' ),/*Title*/
+         'is_pro' => true,
+          'pro_url' => 'https://themesartist.com/profixer/',       
+         'type' => 'roofing',/*Optional eg elementor, elementor or other page builders or type*/
+         'author' => __( 'Themesartist', 'themesartist-demo-importer' ),/*Author Name*/
+         'keywords' => array( 'roofing' ),/*Search keyword*/
+         'categories' => array( 'profixer' ),/*Categories*/
+         'screenshot_url' => trailingslashit( plugin_dir_url( dirname( __FILE__ ) ) ) . '/public/screenshot/profixer-roofing-.jpg',/*Full URL Path to demo screenshot image*/
+         'demo_url' => 'https://demo.themesartist.com/roofing2',/*Full URL Path to Live Demo*/
+         /* Recommended plugin for this demo */
+      ),
+
+      'demo8' =>array(
+         'title' => __( 'Profixer Pro- Cleaning', 'themesartist-demo-importer' ),/*Title*/
+         'is_pro' => true,
+          'pro_url' => 'https://themesartist.com/profixer/',       
+         'type' => 'cleaning',/*Optional eg elementor, elementor or other page builders or type*/
+         'author' => __( 'Themesartist', 'themesartist-demo-importer' ),/*Author Name*/
+         'keywords' => array( 'cleaning' ),/*Search keyword*/
+         'categories' => array( 'profixer' ),/*Categories*/
+         'screenshot_url' => trailingslashit( plugin_dir_url( dirname( __FILE__ ) ) ) . '/public/screenshot/profixer-cleaning.jpg',/*Full URL Path to demo screenshot image*/
+         'demo_url' => 'https://demo.themesartist.com/cleaning2',/*Full URL Path to Live Demo*/
+         /* Recommended plugin for this demo */
+      ),
+
+      'demo9' =>array(
+         'title' => __( 'Profixer Pro- Gardening', 'themesartist-demo-importer' ),/*Title*/
+         'is_pro' => true,
+          'pro_url' => 'https://themesartist.com/profixer/',       
+         'type' => 'gardening',/*Optional eg elementor, elementor or other page builders or type*/
+         'author' => __( 'Themesartist', 'themesartist-demo-importer' ),/*Author Name*/
+         'keywords' => array( 'gardening' ),/*Search keyword*/
+         'categories' => array( 'profixer' ),/*Categories*/
+         'screenshot_url' => trailingslashit( plugin_dir_url( dirname( __FILE__ ) ) ) . '/public/screenshot/profixer-gardening.jpg',/*Full URL Path to demo screenshot image*/
+         'demo_url' => 'https://demo.themesartist.com/gardening/',/*Full URL Path to Live Demo*/
+         /* Recommended plugin for this demo */
+      ),
+
+      'demo10' =>array(
+         'title' => __( 'Profixer Pro - HVAC', 'themesartist-demo-importer' ),/*Title*/
+         'is_pro' => true,
+         'pro_url' => 'https://themesartist.com/profixer/',        
+         'type' => 'hvac',/*Optional eg elementor, elementor or other page builders or type*/
+         'author' => __( 'Themesartist', 'themesartist-demo-importer' ),/*Author Name*/
+         'keywords' => array( 'hvac' ),/*Search keyword*/
+         'categories' => array( 'profixer' ),/*Categories*/
+         'screenshot_url' => trailingslashit( plugin_dir_url( dirname( __FILE__ ) ) ) . '/public/screenshot/profixer-hvac.jpg',/*Full URL Path to demo screenshot image*/
+         'demo_url' => 'https://demo.themesartist.com/hvac',/*Full URL Path to Live Demo*/
+         /* Recommended plugin for this demo */
+      ),
+
+
+   );
+   return $demo_lists;
+}
+add_filter('advanced_import_demo_lists','themesartist_demo_import_lists');
