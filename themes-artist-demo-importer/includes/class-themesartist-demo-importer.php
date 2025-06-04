@@ -342,15 +342,6 @@ if (in_array('one-click-demo-import/one-click-demo-import.php', apply_filters('a
     add_filter('pt-ocdi/import_files', 'themesartist_demo_importer_import_files');
     add_action( 'pt-ocdi/after_import', 'themesartist_demo_importer_after_import_setup' );
 }
-else{
-	function themesartist_demo_importer_admin_notice__error() {
-	    $class = 'notice notice-error';
-	    $message = __( 'You have not installed or activated the One Click Demo Import Plugin', 'themesartist-demo-importer' );
-	 
-	    printf( '<div class="%1$s"><p>%2$s</p></div>', esc_attr( $class ), esc_html( $message ) ); 
-	}
-	add_action( 'admin_notices', 'themesartist_demo_importer_admin_notice__error' );
-}
 
 
 function themesartist_demo_importer_after_import_setup() {
