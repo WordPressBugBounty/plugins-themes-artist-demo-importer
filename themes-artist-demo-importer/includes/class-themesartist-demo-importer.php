@@ -502,7 +502,34 @@ $demo_lists = array(
          'demo_url' => 'https://demo.themesartist.com/hvac',/*Full URL Path to Live Demo*/
          /* Recommended plugin for this demo */
       ),
-
+      'demo11' =>array(
+         'title' => __( 'LMSCourse Free', 'themesartist-demo-importer' ),/*Title*/
+         'is_pro' => false,
+         'type' => 'course',/*Optional eg elementor, elementor or other page builders or type*/
+         'author' => __( 'Themesartist', 'themesartist-demo-importer' ),/*Author Name*/
+         'keywords' => array( 'course'),/*Search keyword*/
+         'categories' => array( 'lmscourse' ),/*Categories*/
+           'template_url' => array(
+            'content' => trailingslashit( plugin_dir_url( dirname( __FILE__ ) ) ) . 'public/themes/lmscourse/content.json',
+            'options' => trailingslashit( plugin_dir_url( dirname( __FILE__ ) ) ) . 'public/themes/lmscourse/options.json',
+            'widgets' => trailingslashit( plugin_dir_url( dirname( __FILE__ ) ) ) . 'public/themes/lmscourse/widgets.json'
+        ),
+         'screenshot_url' => trailingslashit( plugin_dir_url( dirname( __FILE__ ) ) ) . 'public/screenshot/lmscourse-free.jpg',/*Full URL Path to demo screenshot image*/
+         'demo_url' => 'https://demo.themesartist.com/lmscoursefree/',/*Full URL Path to Live Demo*/
+         /* Recommended plugin for this demo */
+      ),
+      'demo12' =>array(
+         'title' => __( 'LMSCourse Pro', 'themesartist-demo-importer' ),/*Title*/
+         'is_pro' => true,
+         'pro_url' => 'https://themesartist.com/lmscourse/',        
+         'type' => 'course',/*Optional eg elementor, elementor or other page builders or type*/
+         'author' => __( 'Themesartist', 'themesartist-demo-importer' ),/*Author Name*/
+         'keywords' => array( 'course' ),/*Search keyword*/
+         'categories' => array( 'lmscourse' ),/*Categories*/
+         'screenshot_url' => trailingslashit( plugin_dir_url( dirname( __FILE__ ) ) ) . '/public/screenshot/lmscourse.jpg',/*Full URL Path to demo screenshot image*/
+         'demo_url' => 'https://demo.themesartist.com/lmscoursepro/',/*Full URL Path to Live Demo*/
+         /* Recommended plugin for this demo */
+      ),
 
    );
    return $demo_lists;

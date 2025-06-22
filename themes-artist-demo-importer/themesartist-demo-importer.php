@@ -16,7 +16,7 @@
  * Plugin Name:       Themes Artist Demo Importer
  * Plugin URI:        https://themesartist.com
  * Description:       This plugin is used to import demo content of all free version Themes Artist themes.
- * Version:           1.0.7
+ * Version:           1.0.8
  * Author:            Themes Artist
  * Author URI:        https://themesartist.com/
  * License:           GPL-2.0+
