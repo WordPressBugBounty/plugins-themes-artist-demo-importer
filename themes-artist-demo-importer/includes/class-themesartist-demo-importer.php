@@ -530,7 +530,34 @@ $demo_lists = array(
          'demo_url' => 'https://demo.themesartist.com/lmscoursepro/',/*Full URL Path to Live Demo*/
          /* Recommended plugin for this demo */
       ),
-
+      'demo13' =>array(
+         'title' => __( 'Newsmagify Pro', 'themesartist-demo-importer' ),/*Title*/
+         'is_pro' => true,
+         'pro_url' => 'https://themesartist.com/newsmagify/',        
+         'type' => 'news',/*Optional eg elementor, elementor or other page builders or type*/
+         'author' => __( 'Themesartist', 'themesartist-demo-importer' ),/*Author Name*/
+         'keywords' => array( 'news','blog','magazine' ),/*Search keyword*/
+         'categories' => array( 'newsmagify' ),/*Categories*/
+         'screenshot_url' => trailingslashit( plugin_dir_url( dirname( __FILE__ ) ) ) . '/public/screenshot/newsmagify.jpg',/*Full URL Path to demo screenshot image*/
+         'demo_url' => 'https://demo.themesartist.com/newsmagifypro/',/*Full URL Path to Live Demo*/
+         /* Recommended plugin for this demo */
+      ),
+      'demo14' =>array(
+         'title' => __( 'Newsmagify Free', 'themesartist-demo-importer' ),/*Title*/
+         'is_pro' => false,
+         'type' => 'news',/*Optional eg elementor, elementor or other page builders or type*/
+         'author' => __( 'Themesartist', 'themesartist-demo-importer' ),/*Author Name*/
+         'keywords' => array( 'news','blog','magazine'),/*Search keyword*/
+         'categories' => array( 'newsmagify' ),/*Categories*/
+           'template_url' => array(
+            'content' => trailingslashit( plugin_dir_url( dirname( __FILE__ ) ) ) . 'public/themes/newsmagify/content.json',
+            'options' => trailingslashit( plugin_dir_url( dirname( __FILE__ ) ) ) . 'public/themes/newsmagify/options.json',
+            'widgets' => trailingslashit( plugin_dir_url( dirname( __FILE__ ) ) ) . 'public/themes/newsmagify/widgets.json'
+        ),
+         'screenshot_url' => trailingslashit( plugin_dir_url( dirname( __FILE__ ) ) ) . 'public/screenshot/newsmagify-free.jpg',/*Full URL Path to demo screenshot image*/
+         'demo_url' => 'https://demo.themesartist.com/newsmagifyfree/',/*Full URL Path to Live Demo*/
+         /* Recommended plugin for this demo */
+      ),
    );
    return $demo_lists;
 }
