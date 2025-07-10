@@ -558,6 +558,36 @@ $demo_lists = array(
          'demo_url' => 'https://demo.themesartist.com/newsmagifyfree/',/*Full URL Path to Live Demo*/
          /* Recommended plugin for this demo */
       ),
+
+
+      'demo15' =>array(
+         'title' => __( 'Localdirectory Pro', 'themesartist-demo-importer' ),/*Title*/
+         'is_pro' => true,
+         'pro_url' => 'https://themesartist.com/localdirectory/',        
+         'type' => 'directory',/*Optional eg elementor, elementor or other page builders or type*/
+         'author' => __( 'Themesartist', 'themesartist-demo-importer' ),/*Author Name*/
+         'keywords' => array( 'directory','listing' ),/*Search keyword*/
+         'categories' => array( 'localdirectory' ),/*Categories*/
+         'screenshot_url' => trailingslashit( plugin_dir_url( dirname( __FILE__ ) ) ) . '/public/screenshot/localdirectory-pro.jpg',/*Full URL Path to demo screenshot image*/
+         'demo_url' => 'https://demo.themesartist.com/localdirectorypro/',/*Full URL Path to Live Demo*/
+         /* Recommended plugin for this demo */
+      ),
+      'demo16' =>array(
+         'title' => __( 'Localdirectory Free', 'themesartist-demo-importer' ),/*Title*/
+         'is_pro' => false,
+         'type' => 'directory',/*Optional eg elementor, elementor or other page builders or type*/
+         'author' => __( 'Themesartist', 'themesartist-demo-importer' ),/*Author Name*/
+         'keywords' => array( 'directory','listing'),/*Search keyword*/
+         'categories' => array( 'localdirectory' ),/*Categories*/
+           'template_url' => array(
+            'content' => trailingslashit( plugin_dir_url( dirname( __FILE__ ) ) ) . 'public/themes/localdirectory/content.json',
+            'options' => trailingslashit( plugin_dir_url( dirname( __FILE__ ) ) ) . 'public/themes/localdirectory/options.json',
+            'widgets' => trailingslashit( plugin_dir_url( dirname( __FILE__ ) ) ) . 'public/themes/localdirectory/widgets.json'
+        ),
+         'screenshot_url' => trailingslashit( plugin_dir_url( dirname( __FILE__ ) ) ) . 'public/screenshot/localdirectory-free.jpg',/*Full URL Path to demo screenshot image*/
+         'demo_url' => 'https://demo.themesartist.com/localdirectoryfree/',/*Full URL Path to Live Demo*/
+         /* Recommended plugin for this demo */
+      ),
    );
    return $demo_lists;
 }
