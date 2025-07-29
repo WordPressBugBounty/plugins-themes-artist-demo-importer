@@ -4,7 +4,7 @@ Donate link: https://themesartist.com/
 Tags: data, demo, import, widgets
 Requires at least: 4.7
 Tested up to: 6.7
-Stable tag: 1.0.10
+Stable tag: 1.0.11
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -65,6 +65,9 @@ This plugin is used to import demo content of all free version Themes Artist the
 
 = 1.0.10 =
 * Localdirectory theme demo content added
+
+= 1.0.11 =
+* Minor Issues Fixed
 
 
 == Upgrade Notice ==
