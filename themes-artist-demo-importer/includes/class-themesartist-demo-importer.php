@@ -643,7 +643,34 @@ $demo_lists = array(
          'demo_url' => 'https://demo.themesartist.com/multiblogcoaching/',/*Full URL Path to Live Demo*/
          /* Recommended plugin for this demo */
       ),
-
+      'demo21' =>array(
+         'title' => __( 'MusicVibe Free', 'themesartist-demo-importer' ),/*Title*/
+         'is_pro' => false,
+         'type' => 'music',/*Optional eg elementor, elementor or other page builders or type*/
+         'author' => __( 'Themesartist', 'themesartist-demo-importer' ),/*Author Name*/
+         'keywords' => array( 'music','artist','producers'),/*Search keyword*/
+         'categories' => array( 'musicvibe' ),/*Categories*/
+           'template_url' => array(
+            'content' => trailingslashit( plugin_dir_url( dirname( __FILE__ ) ) ) . 'public/themes/musicvibe/content.json',
+            'options' => trailingslashit( plugin_dir_url( dirname( __FILE__ ) ) ) . 'public/themes/musicvibe/options.json',
+            'widgets' => trailingslashit( plugin_dir_url( dirname( __FILE__ ) ) ) . 'public/themes/musicvibe/widgets.json'
+        ),
+         'screenshot_url' => trailingslashit( plugin_dir_url( dirname( __FILE__ ) ) ) . 'public/screenshot/musicvibe-free.webp',/*Full URL Path to demo screenshot image*/
+         'demo_url' => 'https://demo.themesartist.com/musicvibefree/',/*Full URL Path to Live Demo*/
+         /* Recommended plugin for this demo */
+      ),
+      'demo22' =>array(
+         'title' => __( 'MusicVibe Pro', 'themesartist-demo-importer' ),/*Title*/
+         'is_pro' => true,
+         'pro_url' => 'https://themesartist.com/musicvibe',        
+         'type' => 'blog',/*Optional eg elementor, elementor or other page builders or type*/
+         'author' => __( 'Themesartist', 'themesartist-demo-importer' ),/*Author Name*/
+         'keywords' => array( 'music','artist','producers' ),/*Search keyword*/
+         'categories' => array( 'musicvibe' ),/*Categories*/
+         'screenshot_url' => trailingslashit( plugin_dir_url( dirname( __FILE__ ) ) ) . '/public/screenshot/musicvibe-pro.webp',/*Full URL Path to demo screenshot image*/
+         'demo_url' => 'https://demo.themesartist.com/musicvibepro/',/*Full URL Path to Live Demo*/
+         /* Recommended plugin for this demo */
+      ),
    );
    return $demo_lists;
 }
