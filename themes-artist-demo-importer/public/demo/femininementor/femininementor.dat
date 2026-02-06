@@ -1,0 +1,3 @@
+a:4:{s:8:"template";s:15:"feminine-mentor";s:4:"mods";a:3:{i:0;b:0;s:18:"nav_menu_locations";a:1:{s:7:"primary";i:10;}s:18:"custom_css_post_id";i:1175;}s:7:"options";a:10:{s:9:"site_icon";s:1:"0";s:37:"feminine_mentor_theme_options[fb_url]";s:1:"#";s:40:"feminine_mentor_theme_options[insta_url]";s:1:"#";s:42:"feminine_mentor_theme_options[twitter_url]";s:1:"#";s:43:"feminine_mentor_theme_options[sidebar_show]";i:1;s:44:"feminine_mentor_theme_options[header_layout]";s:7:"header1";s:42:"feminine_mentor_theme_options[dark_header]";i:0;s:48:"feminine_mentor_theme_options[header_full_width]";i:0;s:43:"feminine_mentor_theme_options[show_widgets]";i:1;s:23:"nav_menus_created_posts";a:0:{}}s:6:"wp_css";s:52:"footer input.search-submit {
+    background: #000;
+}";}

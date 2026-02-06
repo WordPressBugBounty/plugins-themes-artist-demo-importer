@@ -254,12 +254,12 @@ if (!function_exists('themesartist_demo_importer_import_files')) {
 		            'preview_url'                  => 'https://demo.themesartist.com/bizdirectory/',
 		        ),
 		        array(
-		            'import_file_name'             => esc_html__('Artimusic', 'themesartist-demo-importer'),
+		            'import_file_name'             => esc_html__('Artimusic/Musicana', 'themesartist-demo-importer'),
 		            'import_file_url'            => trailingslashit( plugin_dir_url( dirname( __FILE__ ) ) ) . 'public/demo/artimusic/artimusic.xml',
 		            'import_widget_file_url'     => trailingslashit( plugin_dir_url( dirname( __FILE__ ) ) ) . 'public/demo/artimusic/artimusic.wie',
 		            'import_customizer_file_url' => trailingslashit( plugin_dir_url( dirname( __FILE__ ) ) ) . 'public/demo/artimusic/artimusic.dat',
 		            'import_preview_image_url' => trailingslashit( plugin_dir_url( dirname( __FILE__ ) ) ) . 'public/demo/artimusic/artimusic.png',
-		            'import_notice'                => __( 'Make sure you are using free version of Artimusic Theme', 'themesartist-demo-importer' ),
+		            'import_notice'                => __( 'Make sure you are using free version of Artimusic Theme or Musicana Theme', 'themesartist-demo-importer' ),
 		            'preview_url'                  => 'https://demo.themesartist.com/artimusic/',
 		        ),
 		        array(
@@ -342,6 +342,15 @@ if (!function_exists('themesartist_demo_importer_import_files')) {
 		            'import_preview_image_url' => trailingslashit( plugin_dir_url( dirname( __FILE__ ) ) ) . 'public/demo/localdirectory/localdirectory.jpg',
 		            'import_notice'                => __( 'Make sure you are using free version of Localdirectory Theme', 'themesartist-demo-importer' ),
 		            'preview_url'                  => 'https://demo.themesartist.com/localdirectoryfree/',
+		        ),
+		         array(
+		            'import_file_name'             => esc_html__('Feminine Mentor', 'themesartist-demo-importer'),
+		            'import_file_url'            => trailingslashit( plugin_dir_url( dirname( __FILE__ ) ) ) . 'public/demo/femininementor/femininementor.xml',
+		            'import_widget_file_url'     => trailingslashit( plugin_dir_url( dirname( __FILE__ ) ) ) . 'public/demo/femininementor/femininementor.wie',
+		            'import_customizer_file_url' => trailingslashit( plugin_dir_url( dirname( __FILE__ ) ) ) . 'public/demo/femininementor/femininementor.dat',
+		            'import_preview_image_url' => trailingslashit( plugin_dir_url( dirname( __FILE__ ) ) ) . 'public/demo/femininementor/femininementor.jpg',
+		            'import_notice'                => __( 'Make sure you are using free version of Feminine Mentor Theme', 'themesartist-demo-importer' ),
+		            'preview_url'                  => 'https://demo.themesartist.com/femininementorfree/',
 		        ),
         );
     }
